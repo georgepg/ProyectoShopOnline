@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".DescriptionActivity">
+
+    <ImageView
+        android:id="@+id/imgdescrip"
+        android:layout_width="match_parent"
+
+        android:layout_height="250dp"/>
+    <TextView
+        android:id="@+id/txtTitledescrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/YasaiColor"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="titulo"/>
+
+    <TextView
+        android:id="@+id/txtContentdescrip"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:scrollbars="vertical"
+        android:text="contenido"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="Precio: "/>
+        <TextView
+            android:id="@+id/txtPricedescrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/YasaiColor"
+            android:textStyle="bold"
+            android:text="precio"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textColor="#ffffff"
+            app:cornerRadius="25dp"
+            android:backgroundTint="@color/YasaiColor"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textColor="#ffffff"
+            app:cornerRadius="25dp"
+            android:backgroundTint="@color/YasaiColor"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AÑADIR"
+        android:textColor="#ffffff"
+        app:cornerRadius="20dp"
+        android:backgroundTint="@color/YasaiColor"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

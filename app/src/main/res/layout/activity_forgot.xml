@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="30dp"
+    tools:context=".LogIn.ForgotActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <ImageView
+        android:id="@+id/imgYasaiForgot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/yasai"
+        android:transitionName="logoImageTrans"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/txtBienvenidoForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:text="¡Ingresa tu correo!"
+        android:layout_marginTop="28dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/YasaiColor"
+        android:transitionName="textTrans"/>
+    <TextView
+        android:id="@+id/txtcontinuarForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para recuperar tu contraseña"
+        android:textSize="24sp"
+        android:transitionName="iniciaSesionTextTrans"
+        android:fontFamily="@font/abel"
+        android:textColor="#565D6E"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/tfemailForgot"
+            android:hint="Email"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/YasaiColor"
+            android:textColorHint="@color/YasaiColor"
+            app:hintTextColor="#000"
+            android:transitionName="emaiInputTextTrans"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmailForgot"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/abel"
+                android:textColor="#000"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="12dp"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRecuperar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RECUPERAR"
+            android:backgroundTint="@color/YasaiColor"
+            android:textColor="#fff"
+            android:transitionName="buttonTrans"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txtVolverLogin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/YasaiColor"
+            android:fontFamily="@font/abel"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:textStyle="bold"
+            android:text="¿Ya tienes una cuenta? ¡Ir a Inicia Sesion!"
+            android:transitionName="newUserTrans"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

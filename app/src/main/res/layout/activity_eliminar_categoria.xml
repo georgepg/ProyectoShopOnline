@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".Admin.Categorias.EliminarCategoriaActivity">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/yasai"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        />
+    <TextView
+        android:id="@+id/txtTituloCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/YasaiColor"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_marginLeft="30dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/abel"
+        android:text="Eliminar categoria"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/abel"
+        android:text="Selecciona la categoria que deseas eliminar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCategoriaEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

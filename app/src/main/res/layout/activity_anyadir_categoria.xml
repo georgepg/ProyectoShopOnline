@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".Admin.Categorias.AnyadirCategoriaActivity">
+
+    <ImageButton
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/returny"
+        android:backgroundTint="@android:color/transparent"
+        android:transitionName="buttonTrans"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/yasai"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        />
+    <TextView
+        android:id="@+id/txtTituloCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/YasaiColor"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/abel"
+        android:layout_marginBottom="0dp"
+        android:text="Para añadir una nueva categoria"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/abel"
+        android:text="Introduce los datos solicitados a continuación"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tfnombre"
+            android:hint="Nombre de la categoria"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/YasaiColor"
+            android:textColorHint="#ffffff"
+            app:hintTextColor="#ffffff"
+            android:layout_marginBottom="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtNombre"
+                android:fontFamily="@font/abel"
+                android:textColor="#ffffff"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="Elige una imagen para la categoria"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubirFoto"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="SUBIR FOTO"
+                android:textColor="#fff"
+                android:backgroundTint="@color/YasaiColor"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:transitionName="buttonTrans"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AÑADIR"
+            android:textColor="#fff"
+            android:backgroundTint="@color/YasaiColor"
+            android:transitionName="buttonTrans"/>
+
+    </LinearLayout>
+
+</LinearLayout>

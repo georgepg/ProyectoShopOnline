@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn.LoginActivity"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <ImageView
+        android:id="@+id/imgYasaiLogin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/yasai"
+        android:transitionName="logoImageTrans"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/txtBienvenidoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:text="¡Hola de nuevo!"
+        android:layout_marginTop="28dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/YasaiColor"
+        android:transitionName="textTrans"/>
+    <TextView
+        android:id="@+id/txtcontinuarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia sesion para continuar"
+        android:textSize="24sp"
+        android:transitionName="iniciaSesionTextTrans"
+        android:fontFamily="@font/abel"
+        android:textColor="#565D6E"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/tfemailLogin"
+            android:hint="Email"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/YasaiColor"
+            android:textColorHint="@color/YasaiColor"
+            app:hintTextColor="#000"
+            android:transitionName="emaiInputTextTrans"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmailLogin"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/abel"
+                android:textColor="#000"
+                android:drawablePadding="12dp"
+                android:drawableStart="@drawable/email"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/email" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/tfpasswordLogin"
+            android:hint="Contraseña"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/YasaiColor"
+            android:textColorHint="@color/YasaiColor"
+            app:hintTextColor="#000"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/YasaiColor"
+            android:transitionName="passwordInputTextTrans"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPasswordLogin"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/abel"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="12dp"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/lock" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtPasswordForgot"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textSize="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/abel"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="¿Olvidate tu Contraseña?"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btninicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INICIO"
+            android:backgroundTint="@color/YasaiColor"
+            android:textColor="#fff"
+            android:transitionName="buttonTrans"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnLoginGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/txtnuevoUsuario"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/YasaiColor"
+            android:fontFamily="@font/abel"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:textStyle="bold"
+            android:text="¿No tienes cuenta? ¡Registrate!"
+            android:transitionName="newUserTrans"/>
+
+    </LinearLayout>
+
+</LinearLayout>

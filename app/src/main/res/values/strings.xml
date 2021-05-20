@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Yasai</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="web_client_id">328044535357-fgaref129p65nda87d7a11bh05ruo7fm.apps.googleusercontent.com</string>
+    <string name="menu_home">Menu</string>
+    <string name="menu_gallery">Comida</string>
+    <string name="menu_slideshow">Perfil</string>
+    <array name="Imgenes_categorias">
+        <item>http://www.phytocontrol.com/wp-content/uploads/2020/07/page-produits-cerealiers.png
+        </item>
+        <item>
+            https://d23o500odzh64r.cloudfront.net/media/wysiwyg/pdp/Protein_pasta/190821_fs_pasta-bubble_380_recipe-pot.png
+        </item>
+        <item>
+            http://bk-latam-prod.s3.amazonaws.com/sites/burgerking.latam/files/BK_Web_ENSALADA_ORIGINAL_500X540px.png
+        </item>
+        <item>https://vips.com.mx/img/2019/platillosdic/sopa-tortilla.png</item>
+        <item>
+            https://1.bp.blogspot.com/-iTBDmtebvMo/WTm5u4ba6LI/AAAAAAAHHAs/UdaGt_3LSYkC86PaBA9aHSOV-K6sRiDTACLcB/s1600/Juice-PNG-Image.png
+        </item>
+        <item>https://dolcecapricho.es/wp-content/uploads/2017/06/granizados-300x204.png</item>
+        <item>https://www.frusana.net/wp-content/uploads/frutaYLegumes.png</item>
+        <item>https://www.terecazola.com/wp-content/uploads/2017/02/pastel-de-zanahoria-2.png</item>
+    </array>
+</resources>

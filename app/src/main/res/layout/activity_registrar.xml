@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn.RegistrarActivity"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+<ImageView
+    android:id="@+id/imgYasaiRegistrar"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:src="@drawable/yasai"
+    android:transitionName="logoImageTrans"
+    android:layout_gravity="left"
+    android:layout_marginLeft="20dp"
+    />
+   <TextView
+       android:id="@+id/txtBienvenidoRegistro"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/abel"
+       android:text="Binevenido,"
+       android:layout_marginTop="28dp"
+       android:textSize="40sp"
+       android:textStyle="bold"
+       android:textColor="@color/YasaiColor"
+       android:layout_marginLeft="20dp"
+       android:transitionName="textTrans"/>
+    <TextView
+        android:id="@+id/txtcontinuarRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrate para empezar a usar Yasai"
+        android:textSize="24sp"
+        android:fontFamily="@font/abel"
+        android:transitionName="iniciaSesionTextTrans"
+        android:layout_marginLeft="20dp"
+        android:textColor="#565D6E"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tfname"
+            android:hint="Nombre Completo"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/YasaiColor"
+            android:textColorHint="@color/YasaiColor"
+            app:hintTextColor="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtName"
+                android:drawableStart="@drawable/name"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/abel"
+                android:textColor="#000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tfemailRegistro"
+            android:hint="Email"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/YasaiColor"
+            android:textColorHint="@color/YasaiColor"
+            app:hintTextColor="#000"
+            android:transitionName="emaiInputTextTrans"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmail"
+                android:textColor="#000"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tfpasswordRegistro"
+            android:hint="Contraseña"
+            android:transitionName="passwordInputTextTrans"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/YasaiColor"
+            android:textColorHint="@color/YasaiColor"
+            app:hintTextColor="#000"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/YasaiColor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/abel"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tfConfirmpassword"
+            android:hint="Confirmar Contraseña"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/YasaiColor"
+            android:textColorHint="@color/YasaiColor"
+            app:hintTextColor="#000"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/YasaiColor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/abel"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tfcode"
+            android:hint="Codigo Administrador (OPCIONAL)"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/YasaiColor"
+            android:textColorHint="@color/YasaiColor"
+            app:hintTextColor="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtCode"
+                android:drawableStart="@drawable/code"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/abel"
+                android:textColor="#000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="10dp"/>
+
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/btnRegistrar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="REGISTRAR"
+       android:textColor="#fff"
+       android:backgroundTint="@color/YasaiColor"
+       android:layout_marginTop="12dp"
+       android:layout_marginBottom="12dp"
+       android:transitionName="buttonTrans"/>
+
+        <TextView
+            android:id="@+id/txtGoToIni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/YasaiColor"
+            android:fontFamily="@font/abel"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:textStyle="bold"
+            android:text="¿Ya tienes una cuenta? ¡Ir a Inicia Sesion!"
+            android:transitionName="newUserTrans"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Food.FoodFragment"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    >
+<!--
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvFood"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="336dp"
+        android:verticalScrollbarPosition="defaultPosition"/>
+-->
+</LinearLayout>
